@@ -6,17 +6,14 @@ using System.Web;
 
 namespace PsicoterapiasIS.Models
 {
-    public class Usuario
+    public class Alumno: Usuario
     {
         public int id { get; set; }
         [Required]
-        [StringLength(30)]
-        public string Nombre { get; set; }
+        public int Matricula { get; set; }
         [Required]
-        [StringLength(100)]
-        public string Apellidos { get; set; }
+        public int Semestre { get; set; }
         [Required]
-        public DateTime FechaNac { get; set; }
-
+        public int Horas { get; set; }
     }
 }

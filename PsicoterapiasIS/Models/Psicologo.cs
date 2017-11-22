@@ -6,17 +6,19 @@ using System.Web;
 
 namespace PsicoterapiasIS.Models
 {
-    public class Usuario
+    public class Psicologo: Usuario
     {
         public int id { get; set; }
         [Required]
+        [StringLength(50)]
+        public string Cedula { get; set; }
+        [Required]
         [StringLength(30)]
-        public string Nombre { get; set; }
+        public string Horario { get; set; }
         [Required]
-        [StringLength(100)]
-        public string Apellidos { get; set; }
+        public int Calificacion { get; set; }
         [Required]
-        public DateTime FechaNac { get; set; }
+        public float Precio { get; set; }
 
     }
 }
