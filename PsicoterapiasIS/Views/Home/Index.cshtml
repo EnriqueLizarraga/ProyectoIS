@@ -1,31 +1,630 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<head>
+    <title></title>
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!-- Bootstrap core CSS -->
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+</head>
+
+<body>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+
+        <div class="container">
+            <img src="img/logo.jpg" width="120" height="75" class="d-inline-block alig top" alt="logo UABC">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><font size="5">Universidad Autonoma de Baja California</font></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services"><font size="2">Notificaciones</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio"><font size="2">Cardex</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about"><font size="2">Perfil</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team"><font size="2">psicologos</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger"><font size="2">Logout</font></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="img/facultad.jpg" width="660" height="400" class="d-inline-block alig content" alt="facultad">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="table-warning" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text">Facultad de psicologia.</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div>
+                        <img class="mx-auto rounded-circle" src="img/citas.png" height="128" width="120" alt="">
+                    </div>
+                    <h4 class="service-heading">citas</h4>
+                    <p class="text-muted">Esta mes: 2 </p>
+                    <a href=""> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">calendario</font></button> </a>
+
+                </div>
+                <div class="col-md-4">
+                    <img class="mx-auto rounded-circle" src="img/buzon.png" height="328" width="320" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img class="mx-auto rounded-circle" src="img/mensaje.jpg" alt="">
+                    </div>
+                    <h4 class="service-heading">Mensajes</h4>
+                    <p class="text-muted">Sin leer: 0 </p>
+                    <a href=""> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">consultar</font></button> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section id="portfolio">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="img/psicologo.jpg" height="160" width="160">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10" />
+                <div class="team-member">
+                    <table class="table table-md">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <td>Matricula</th>
+                                <th>Horas cursadas</th>
+                                <th>psicologo asignado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arcenio Enrique Lizarraga Hernandez</td>
+                                <td>1216920</td>
+                                <td>250</td>
+                                <td>Juan Avitia </td>
+                        </tbody>
+                        <tr>
+                            <th>Observaciones</th>
+                            <th>No.Semestre</th>
+                            <th>Horas faltantes</th>
+                            <th>Avance % </th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Ha sido un paciente muy colaborativo</td>
+                                <td>7</td>
+                                <td>50</td>
+                                <td>83.33% </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" />
+            <a href="index.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">generar constancia</font></button> </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="table-warning" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">perfil</h2>
+                    <h3 class="section-subheading text-muted">Lizarraga Hernandez Arcenio Enrique</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Datos escolares</h4>
+                                    <h5>2013-2017</h5>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Facultad de psicologia</p>
+                                    <p class="text-muted">Plan de estudio 2009-2</p>
+                                    <p class="text-muted">semestre: 7</p>
+                                    <p class="text-muted">Sin liberar requisito de terapia</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Experiencia profesional</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Ninguna</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <a href="perfilpsicologo.html"><button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">Editar Perfil</button></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-lg-4 text-center">
+                                <div id="success">
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citas -->
+    <section class="bg-fluid" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Psicologos registrados</h2>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-7">
+                    <div class="team-member">
+                        <img class="mx-auto rounded" src="img/cimarron.png" alt="">
+                        <img class="mx-auto rounded" src="img/psicologa.jpg" alt="">
+
+                        <!--   Calendario DataTime  -->
+                        <div class="container">
+                            <form action="" class="form-horizontal" role="form">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                            <input class="form-control" size="16" type="text" value="" readonly>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                                        </div>
+                                        <input type="hidden" id="dtp_input1" value="" /><br />
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+                        <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+                        <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+                        <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+                        <script type="text/javascript">
+            $('.form_datetime').datetimepicker({
+            //language:  'fr',
+            weekStart: 1,
+            todayBtn:  1,
+		    autoclose: 1,
+	  	    todayHighlight: 1,
+		    startView: 2,
+		    forceParse: 0,
+            showMeridian: 1
+            });
+	        $('.form_date').datetimepicker({
+            language:  'fr',
+            weekStart: 1,
+            todayBtn:  1,
+		    autoclose: 1,
+		    todayHighlight: 1,
+		    startView: 2,
+		    minView: 2,
+		    forceParse: 0
+            });
+	        $('.form_time').datetimepicker({
+            language:  'fr',
+            weekStart: 1,
+            todayBtn:  1,
+		    autoclose: 1,
+		    todayHighlight: 1,
+		    startView: 1,
+		    minView: 0,
+		    maxView: 1,
+		    forceParse: 0
+           });
+                        </script>
+                        <div class="row">
+                            <div class="col-2">
+                                <a href="alumno.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">Agendar</font></button>  </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="alumno.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">Ver perfil</font></button>  </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="alumno.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">Solicitud</font></button>  </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="alumno.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit"><font size="2">Cancelar</font></button>  </a>
+                            </div>
+                        </div>
+
+
+                        <!-- Fin del calendario dataTime -->
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Seleccionar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Juan Avitia</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Cesar Ortiz</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Levid Guerra</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Patricia Lopez</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Esmeralda Aguayo</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Kenya Garcia</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Francisco Mendoza</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="team-member">
+
+                    <!--  <img class="mx-auto rounded" src="img/psicologa.jpg" alt="">3er columna -->
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Por la realizacion de plena del hombre </span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="#"><font color="black">Facultad de psicologia</font></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><font color="black">UABC</font></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Explore</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Finish</li>
+                                    <li>Category: Identity</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Lines</li>
+                                    <li>Category: Branding</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Southwest</li>
+                                    <li>Category: Website Design</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Window</li>
+                                    <li>Category: Photography</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+</html>
+

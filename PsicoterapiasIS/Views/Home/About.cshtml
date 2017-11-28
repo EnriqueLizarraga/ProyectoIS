@@ -1,7 +1,641 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>Use this area to provide additional information.</p>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Psicologos Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+
+        <div class="container">
+            <img src="img/logo.jpg" width="120" height="75" class="d-inline-block alig top" alt="logo UABC">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Universidad Autonoma de Baja California</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Notificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Alumnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Psicologos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="img/facultad.jpg" width="660" height="400" class="d-inline-block alig content" alt="facultad">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="table-warning" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Notificaciones generales</h2>
+                    <h3 class="section-subheading text-muted">Facultad de psicologia.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div>
+                        <img class="mx-auto rounded-circle" src="img/alta.jpg" alt="">
+                    </div>
+                    <h4 class="service-heading">Altas</h4>
+                    <p class="text-muted">Sin atender: 3 </p>
+                    <a href=""> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">consultar</button> </a>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img class="mx-auto rounded-circle" src="img/baja.jpg" alt="">
+                    </div>
+                    <h4 class="service-heading">Bajas</h4>
+                    <p class="text-muted">Sin atender: 1 </p>
+                    <a href=""> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">consultar</button> </a>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img class="mx-auto rounded-circle" src="img/mensaje.jpg" alt="">
+                    </div>
+                    <h4 class="service-heading">Mensajes</h4>
+                    <p class="text-muted">Sin leer: 0 </p>
+                    <a href=""> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">consultar</button> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section id="portfolio">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Alumnos registrados</h2>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-8">
+                    <div class="team-member">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Matricula</th>
+                                    <th>Seleccionar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Arcenio Enrique Lizarraga Hernandez</td>
+
+                                    <td>1216920</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Francisco Casas Vazquez</td>
+                                    <td>1216730</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Arturo Nevarez Villa</td>
+                                    <td>1216515</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Carlos Omar Calderon Meza</td>
+                                    <td>1216810</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Miriam Nevarez Martinez</td>
+                                    <td>1216730</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Angelica Murillo Fernandez</td>
+                                    <td>1216110</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Natalia Acosta Cortinez</td>
+                                    <td>1216814</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded" src="img/cimarron.png" alt="">
+
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="index.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">ver perfil</button>  </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="index.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">enviar mensaje</button>  </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- About -->
+    <section class="table-warning" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">perfil</h2>
+                    <h3 class="section-subheading text-muted">Lic Juan Pablo.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Grado academico</h4>
+                                    <h5>2000-2006</h5>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lic en psicologia cursada en la universidad Autonoma de Baja california con maestria en psicopedagogia!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+
+                                    <h4 class="subheading">Experiencia profesional</h4>
+                                    <h5>2007-2010</h5>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Consejero u orientador vocacional</p>
+                                    <h5>2010-2017</h5>
+                                    <p class="text-muted">Consejero o terapeuta en la universidad autonoma de baja california</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+
+                                    <h4 class="subheading">Cursos o diplomados </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        -Diplomado en Terapia del Arte Centrada en Emociones
+                                    </p>
+                                    <p class="text-muted"> -Diplomado para la Formación de Psicoterapeutas Sistémicos como un Enfoque Basado en Soluciones</p>
+                                    <p class="text-muted">-Diplomado en Terapia Familiar Breve Estratégica</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/about/personal.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <p class="text-muted"> Telefono: 664-5152012 </p>
+                                    <p class="text-muted">  Juan Pablo  Guzman Hernandez  </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <div id="success">
+                                </div>
+                                <a href="perfilpsicologo.html"><button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">Editar Perfil</button></a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citas -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Psicologos registrados</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded" src="img/psicologa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Seleccionar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Juan Avitia</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Cesar Ortiz</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Levid Guerra</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Patricia Lopez</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Esmeralda Aguayo</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Kenya Garcia</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Francisco Mendoza</td>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded" src="img/cimarron.png" alt="">
+
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="index.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">ver perfil</button>  </a>
+                            </div>
+                            <div class="col-5">
+                                <a href="index.html"> <button id="sendMessageButton" class="btn btn-danger btn-sm text-uppercase" type="submit">enviar mensaje</button>  </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Clients -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Por la realizacion de plena del hombre </span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="#"><font color="brown">Facultad de psicologia UABC</font></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Explore</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Finish</li>
+                                    <li>Category: Identity</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Lines</li>
+                                    <li>Category: Branding</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Southwest</li>
+                                    <li>Category: Website Design</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Window</li>
+                                    <li>Category: Photography</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
